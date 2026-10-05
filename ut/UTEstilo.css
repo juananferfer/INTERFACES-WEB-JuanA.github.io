@@ -1,0 +1,126 @@
+/* TÍTULO */
+h1 { 
+    text-align: center; 
+    margin: 0; 
+    padding: 25px 0 35px 0; 
+    font-size: 45px; 
+    color: white; 
+    background-color: rgba(172, 35, 35, 0.9); 
+} 
+h1 a { 
+    color: white; 
+    text-decoration: none; 
+}
+
+h3 { 
+    text-align: center; 
+    margin: 0; 
+    padding: 25px 0 35px 0; 
+    font-size: 45px; 
+    color: white; 
+    background-color: #865f4c; 
+} 
+h3 a { 
+    color: white; 
+    text-decoration: none; 
+}
+
+/* MENÚ DE CADA PUNTO */
+nav { 
+    background-color: #a54b30; 
+    height: 50px; 
+}
+
+nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    align-items: center; 
+    height: 100%; 
+}
+
+nav ul li { 
+    margin-left: 38px; 
+}
+
+nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+nav ul li a:hover { 
+    color: black; 
+}
+
+/* TEXTO-DOS */ 
+.dos-columnas { 
+    display: flex; 
+    width: 100%; 
+    min-height: 350px; 
+}
+
+/* TEXTO DE LA izquierda */ 
+.opciones { 
+    width: 40%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+.opciones ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: center; 
+} 
+.opciones li { 
+    font-size: 30px; 
+    font-weight: bold; 
+    color: black; 
+    margin: 20px 0; 
+}
+
+/* Cuadraditos */ 
+.opciones li a { 
+    display: block; 
+    background-color: #e2cdba; 
+    border: 3px solid black; 
+    border-radius: 10px; 
+    padding: 20px; 
+
+    font-size: 30px; 
+    font-weight: bold; 
+    color: black; 
+    text-decoration: none; 
+
+    text-align: center;
+
+    /* Sombra */ 
+    box-shadow: 5px 5px 0px black;
+
+    /* Animación */ 
+    transition: 0.2s; 
+}
+
+/* TEXTO DE LA DERECHA */ 
+.contenido { 
+    width: 60%; 
+    padding-top: 20px; 
+} 
+.contenido h2 { 
+    color: black; 
+    font-size: 30px; 
+    margin-bottom: 20px; 
+} 
+.contenido ul { 
+    padding-left: 25px; 
+} 
+.contenido li { 
+    font-size: 17px; 
+    margin-bottom: 6px; 
+} 
+.contenido li::marker { 
+    color: black; 
+}
