@@ -20,6 +20,8 @@ h1 {
     font-family: monospace;
     font-size: 40px;
     letter-spacing: 4px;
+
+    font-weight: bold;
 }
 
 /* line que separa */
@@ -97,4 +99,50 @@ nav li img {
     top: 50%;
 
     transform: translate(-50%, -40%);
+}
+
+/* ============================= */
+/*          MÓVIL             */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    /* TÍTULO PRINCIPAL */
+    h1 {
+        font-size: 24px;
+        padding: 20px 10px;
+        letter-spacing: 2px;
+    }
+
+    /* UNA UNIDAD DEBAJO DE OTRA */
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    /* CADA UNIDAD */
+    nav li {
+        height: 260px;
+        width: 100%;
+    }
+
+    /* TÍTULO DE LA UNIDAD */
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+        line-height: 1.2;
+    }
+
+    /* IMAGEN */
+    nav li img {
+        width: 45%;
+        max-height: 160px;
+        top: 58%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* COPYRIGHT */
+    h1:last-child {
+        font-size: 20px;
+        padding: 25px 10px;
+    }
 }
