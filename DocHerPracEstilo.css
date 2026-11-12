@@ -138,6 +138,55 @@ body {
         font-size: 12px;
         font-weight: normal;
     }
+
+
+/* TARJETAS DE DOCUMENTACIÓN */
+
+.contenido ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contenido li {
+    width: 230px;
+    height: 180px;
+    background-color: #f3c1c1;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: transform 0.3s ease, 
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contenido li a {
+    color: #702d2d;
+    text-decoration: none;
+    padding: 20px;
+    width: 100%;
+}
+
+.contenido li:hover {
+    background-color: #d46d6d;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
     
 /* ============================= */
 /*             MÓVIL             */
@@ -231,5 +280,17 @@ body {
 
     footer h2 {
         font-size: 10px;
+    }
+
+
+    .contenido ul {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contenido li {
+        width: 200px;
+        height: 150px;
+        font-size: 16px;
     }
 }
