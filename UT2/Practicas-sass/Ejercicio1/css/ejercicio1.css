@@ -1,0 +1,23 @@
+/*# sourceMappingURL=ejercicio1.css.map */
+
+.text-box-primary {
+    background-color: #eaf4fc;
+    color: #1d3557;
+    border: 2px solid #3498db;
+    font-size: 16px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.text-box-secondary {
+    background-color: #fff3e0;
+    color: #8a4b08;
+    border: 2px solid #f39c12;
+    font-size: 20px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}

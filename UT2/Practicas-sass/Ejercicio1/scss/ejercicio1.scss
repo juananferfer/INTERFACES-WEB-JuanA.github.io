@@ -1,0 +1,44 @@
+
+// Variables predefinidas
+$color-fondo: #eaf4fc;
+$color-texto: #1d3557;
+$color-borde: #3498db;
+$tamano-texto: 16px;
+
+// Mixin reutilizable
+@mixin text-box(
+    $background,
+    $text-color,
+    $border-color,
+    $font-size
+) {
+    background-color: $background;
+    color: $text-color;
+    border: 2px solid $border-color;
+    font-size: $font-size;
+
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+// Primera instancia del mixin
+.text-box-primary {
+    @include text-box(
+        $color-fondo,
+        $color-texto,
+        $color-borde,
+        $tamano-texto
+    );
+}
+
+// Segunda instancia del mixin
+.text-box-secondary {
+    @include text-box(
+        #fff3e0,
+        #8a4b08,
+        #f39c12,
+        20px
+    );
+}

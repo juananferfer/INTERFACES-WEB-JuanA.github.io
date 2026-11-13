@@ -1,0 +1,75 @@
+/* VARIABLES */
+$color-principal: #3498db;
+$color-secundario: #2c3e50;
+$color-fondo: #f2f2f2;
+$color-texto: #333333;
+$fuente: Arial, sans-serif;
+$margen: 20px;
+
+/* MIXIN */
+@mixin estilo-seccion {
+    padding: $margen;
+    margin: $margen;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    background-color: $color-fondo;
+    font-family: $fuente;
+    color: $color-texto;
+}
+
+/* ANIDAMIENTO DEL HEADER Y NAV */
+header {
+    background-color: $color-secundario;
+    padding: $margen;
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ANIDAMIENTO DEL MAIN */
+main {
+    max-width: 1000px;
+    margin: auto;
+
+    section {
+        @include estilo-seccion;
+
+        h2 {
+            color: $color-principal;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        &:hover {
+            border-left: 5px solid $color-principal;
+        }
+    }
+}

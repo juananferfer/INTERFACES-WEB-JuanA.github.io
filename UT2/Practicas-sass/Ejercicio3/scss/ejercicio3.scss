@@ -1,0 +1,63 @@
+// 1. Definición de variables
+$color-fondo: #f4f4f4;
+$color-primario: #3498db;
+$fuente-texto: Arial, Helvetica, sans-serif;
+$tamano-texto: 16px;
+
+// 2. Mixin para aplicar estilo al botón
+@mixin estilo-boton($bg-color, $text-color: #ffffff) {
+    display: inline-block;
+    background-color: $bg-color;
+    color: $text-color;
+    border: 2px solid darken($bg-color, 10%); // Borde ligeramente más oscuro para dar relieve
+    border-radius: 5px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: $fuente-texto;
+    font-size: $tamano-texto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    // 3. Función para oscurecer el color del botón un 10% al hacer hover
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+// Estilos generales y del contenedor
+body {
+    font-family: $fuente-texto;
+    font-size: $tamano-texto;
+    margin: 20px;
+}
+
+.contenedor {
+    background-color: $color-fondo;
+    border: 1px solid $color-primario;
+    padding: 30px;
+    
+    h1 {
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #222222;
+    }
+}
+
+// 4. Instancia del botón usando el mixin
+.btn-tutorial {
+    @include estilo-boton($color-primario);
+}

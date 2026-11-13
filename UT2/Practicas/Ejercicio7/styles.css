@@ -1,0 +1,67 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+/* PRIMER CONTENEDOR: ROJO */
+.cuadro1 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 5px;
+    border: 2px solid red;
+    width: 307px;
+    height: 55px;
+    overflow: hidden;
+}
+.cuadro1 .box {
+    width: 25px;
+    height: 45px;
+}
+
+/* SEGUNDO CONTENEDOR: VERDE */
+.cuadro2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    padding: 5px;
+    border: 2px solid green;
+    width: 307px;
+    height: 113px;
+}
+
+/* TERCER CONTENEDOR: AZUL */
+.cuadro3 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    padding: 5px;
+    border: 2px solid blue;
+    width: 307px;
+    height: 113px;
+}
